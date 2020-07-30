@@ -30,6 +30,7 @@ Within the src folder please create the following folders:
 2. images (.svg, .jpg, or storage .ai files)
 3. pages (index.js shall house your router)
 4. style (contains .scss files, index.scss shall be the main stylesheet)
+5. database
 
 Remove the following default files:
 
