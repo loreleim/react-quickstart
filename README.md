@@ -74,11 +74,34 @@ import React from "react";
 import style from "./index.module.scss";
 
 class Home extends React.Component {
+
+  constructor(props) {
+    super();
+    this.state = {
+      string: "",
+      int: 0,
+      array: [],
+      userInput: "",
+    };
+  }
+
+  handleChange = (e) => {
+    const name = e.target.name;
+    this.setState({ [name]: e.target.value });
+  };
+
   render() {
     return (
       <body className={style.mainContainer}>
         <section>
           <h1>Hello</h1>
+
+          <input
+            type="text"
+            name={"userInput"}
+            onChange={this.handleChange}
+          ></input>
+          <label>Placeholder</label>
         </section>
       </body>
     );
