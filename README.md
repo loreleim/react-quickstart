@@ -35,9 +35,14 @@ To initialize Github Pages in package.json:
 Then in terminal run 
 ```
 git init
-git remote add origin git@github.com:loreleim/my-app.git
+git remote add origin https://loreleim.github.io/rentalcar/.git
 npm run deploy
 
+```
+```
+git add .
+git commit -m “Your commit message”
+git push origin master
 ```
 And then open & start the project
 ```
