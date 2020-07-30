@@ -182,6 +182,7 @@ class RoutedApp extends Component {
 export default RoutedApp;
 ```
 
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
+## Maps for local arrays 
+```
+{this.state.todo.map((item) => (<div key={item}>{item}</div>))}
+```
