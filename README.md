@@ -186,3 +186,20 @@ export default RoutedApp;
 ```
 {this.state.todo.map((item) => (<div key={item}>{item}</div>))}
 ```
+
+## Submitting Forms 
+```
+  submit = (e) => {
+    e.preventDefault();
+    document.getElementById("todo").value = "";
+    if (!this.state.userInput) {
+      this.setState({ showError: true });
+    } else {
+      this.setState({
+        showError: false,
+        todo: [...this.state.todo, this.state.userInput],
+      });
+    }
+  };
+```
+
