@@ -50,6 +50,19 @@ Edit the public > index.html > <title> and <meta description content="">
 2. style > variables.scss
 3. pages > index.js
 4. pages > home directory > index.js & index.module.scss
+5. database > index.js
+
+## database > index.js
+```
+class LocalData {
+  constructor() {
+    this.orderNum = [""];
+  }
+}
+
+const storage = new LocalData();
+export default storage;
+```
 
 ## style > index.scss
 
