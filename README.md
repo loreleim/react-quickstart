@@ -47,7 +47,7 @@ Edit the public > index.html > <title> and <meta description content="">
 3. pages > index.js
 4. pages > home directory > index.js & index.module.scss
 
-## index.scss
+## style > index.scss
 
 ```
 @import "./variables.scss";
@@ -58,6 +58,16 @@ Edit the public > index.html > <title> and <meta description content="">
   box-sizing: border-box;
 }
 ```
+
+## style > variables.scss
+
+```
+$primary: #00fff5;
+$secondary: #ff5de0;
+$color: #1e1e1e;
+$color: #292929;
+```
+
 ## home > index.js
 ```
 import React from "react";
