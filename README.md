@@ -5,7 +5,6 @@
 ```
 npx/npm create-react-app my-app
 cd my-app
-npm start
 ```
 
 And then for scss management:
@@ -20,6 +19,10 @@ npm install react-router-dom
 For Firebase Data Management
 ```
 npm install --save firebase
+```
+And then open & start the project
+```
+npm run start
 ```
 
 ## Organization and Structure
