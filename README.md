@@ -58,6 +58,25 @@ Edit the public > index.html > <title> and <meta description content="">
   box-sizing: border-box;
 }
 ```
+## home > index.js
+```
+import React from "react";
+import style from "./index.module.scss";
+
+class Home extends React.Component {
+  render() {
+    return (
+      <body className={style.mainContainer}>
+        <section>
+          <h1>Hello</h1>
+        </section>
+      </body>
+    );
+  }
+}
+
+export default Home;
+```
 
 ## home > index.module.scss
 ```
