@@ -54,14 +54,111 @@ Edit the public > index.html > <title> and <meta description content="">
 
 ## database > index.js
 ```
-class LocalData {
+class Database {
   constructor() {
-    this.orderNum = [""];
+    this.workData = {
+      SketchArray: [
+        {
+          name: "CDL Mockups",
+          medium: "Adobe XD",
+          image: require("../images/cdlmockup-thumb.jpg"),
+          link: "page",
+          description: "this is a mockup for blank",
+        },
+        {
+          name: "Envisioning Justice",
+          medium: "Adobe XD",
+          image: require("../images/cdlmockup-thumb.jpg"),
+          link: "page",
+          description: "this is a mockup for blank",
+        },
+        {
+          name: "Print Dashboard",
+          medium: "Post Its",
+          image: require("../images/cdlmockup-thumb.jpg"),
+          link: "page",
+          description: "this is a mockup for blank",
+        },
+      ],
+      UXArray: [
+        {
+          name: "The Bus Hawai'i",
+          medium: "Case Study",
+          image: require("../images/cdlmockup-thumb.jpg"),
+          link: "page",
+          description: "this is a mockup for blank",
+        },
+        {
+          name: "Transit Data",
+          medium: "Research",
+          image: require("../images/cdlmockup-thumb.jpg"),
+          link: "page",
+          description: "this is a mockup for blank",
+        },
+      ],
+      ProgArray: [
+        {
+          name: "Print Dashboard",
+          medium: "React & Firebase",
+          image: require("../images/cdlmockup-thumb.jpg"),
+          link: "page",
+          description: "this is a mockup for blank",
+        },
+        {
+          name: "DaBus Hawai'i",
+          medium: "React, Firebase & TheBus API",
+          image: require("../images/cdlmockup-thumb.jpg"),
+          link: "page",
+          description: "this is a mockup for blank",
+        },
+        {
+          name: "Passion to Purpose",
+          medium: "React.js",
+          image: require("../images/cdlmockup-thumb.jpg"),
+          link: "page",
+          description: "this is a mockup for blank",
+        },
+      ],
+    };
+    this.projects = {
+      Featured: [
+        {
+          name: "Rebrand",
+          collab: "Convergence Design Lab",
+          image: require("../images/cdlmockup-thumb.jpg"),
+          link: "page",
+        },
+        {
+          name: "Passion to Purpose",
+          collab: "Convergence Design Lab",
+          image: require("../images/cdlmockup-thumb.jpg"),
+          link: "page",
+        },
+        {
+          name: "Equity Framework",
+          collab: "Chicago Public Schools",
+          image: require("../images/cdlmockup-thumb.jpg"),
+          link: "page",
+        },
+        {
+          name: "Da Bus",
+          collab: "The Bus Hawai'i",
+          image: require("../images/cdlmockup-thumb.jpg"),
+          link: "page",
+        },
+        {
+          name: "Nettiquette Game",
+          collab: "Augmented Reality",
+          image: require("../images/cdlmockup-thumb.jpg"),
+          link: "page",
+        },
+      ],
+    };
   }
 }
 
-const storage = new LocalData();
-export default storage;
+const store = new Database();
+export default store;
 ```
 
 ## style > index.scss
@@ -103,8 +200,8 @@ class Home extends React.Component {
   }
 
   handleChange = (e) => {
-    const name = e.target.name;
-    this.setState({ [name]: e.target.value });
+    this.setState({ searchItem: e.target.value });
+    console.log(this.state.searchItem);
   };
 
   render() {
