@@ -6,19 +6,38 @@
 npx/npm create-react-app my-app
 cd my-app
 ```
-
-And then for scss management:
+SCSS Management:
 
 ```
 npm install node-sass
 ```
-For page routing
+Page Routing:
 ```
 npm install react-router-dom
 ```
-For Firebase Data Management
+Firebase Data:
 ```
 npm install --save firebase
+```
+To initialize Github Pages:
+```
+npm install gh-pages --save-dev
+```
+To initialize Github Pages in package.json: 
+```
+"homepage": "http://yourname.github.io/my-app"
+"scripts": {
+//...
+"predeploy": "npm run build",
+"deploy": "gh-pages -d build"
+}
+```
+Then in terminal run 
+```
+git init
+git remote add origin git@github.com:loreleim/my-app.git
+npm run deploy
+
 ```
 And then open & start the project
 ```
