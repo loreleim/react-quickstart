@@ -19,6 +19,10 @@ Firebase Data:
 ```
 npm install --save firebase
 ```
+GSAP Animations:
+```
+npm install gsap
+```
 To initialize Github Pages:
 ```
 npm install gh-pages --save-dev
