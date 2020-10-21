@@ -48,7 +48,14 @@ git add .
 git commit -m “Your commit message”
 git push origin master
 ```
-And then open & start the project
+A note on updating Github Pages: When you are ready to merge from your develop branch, do this in develop branch: 
+```
+npm run deploy
+```
+Then go to your master branch, and merge the changes from dev into master.
+You should see the edits in your github.io
+
+After everything is installed, go ahead and run the project to see live edits! Make sure to do this in a develop branch
 ```
 npm run start
 ```
