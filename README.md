@@ -19,6 +19,10 @@ Firebase Data:
 ```
 npm install --save firebase
 ```
+Reading ENV files:
+```
+npm install --save-dev dotenv
+```
 GSAP Animations:
 ```
 npm install gsap
