@@ -9,7 +9,7 @@ cd my-app
 SCSS Management:
 
 ```
-npm install node-sass
+npm install node-sass@4.14.1
 ```
 Page Routing:
 ```
