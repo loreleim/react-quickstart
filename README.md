@@ -95,104 +95,19 @@ Edit the public > index.html > <title> and <meta description content="">
 ```
 class Database {
   constructor() {
-    this.workData = {
-      SketchArray: [
+    this.multidimensionalArray = {
+      About: [
         {
           name: "CDL Mockups",
-          medium: "Adobe XD",
-          image: require("../images/cdlmockup-thumb.jpg"),
-          link: "page",
-          description: "this is a mockup for blank",
-        },
-        {
-          name: "Envisioning Justice",
-          medium: "Adobe XD",
-          image: require("../images/cdlmockup-thumb.jpg"),
-          link: "page",
-          description: "this is a mockup for blank",
-        },
-        {
-          name: "Print Dashboard",
-          medium: "Post Its",
-          image: require("../images/cdlmockup-thumb.jpg"),
-          link: "page",
-          description: "this is a mockup for blank",
-        },
-      ],
-      UXArray: [
-        {
-          name: "The Bus Hawai'i",
-          medium: "Case Study",
-          image: require("../images/cdlmockup-thumb.jpg"),
-          link: "page",
-          description: "this is a mockup for blank",
-        },
-        {
-          name: "Transit Data",
-          medium: "Research",
-          image: require("../images/cdlmockup-thumb.jpg"),
-          link: "page",
-          description: "this is a mockup for blank",
-        },
-      ],
-      ProgArray: [
-        {
-          name: "Print Dashboard",
-          medium: "React & Firebase",
-          image: require("../images/cdlmockup-thumb.jpg"),
-          link: "page",
-          description: "this is a mockup for blank",
-        },
-        {
-          name: "DaBus Hawai'i",
-          medium: "React, Firebase & TheBus API",
-          image: require("../images/cdlmockup-thumb.jpg"),
-          link: "page",
-          description: "this is a mockup for blank",
-        },
-        {
-          name: "Passion to Purpose",
-          medium: "React.js",
-          image: require("../images/cdlmockup-thumb.jpg"),
-          link: "page",
-          description: "this is a mockup for blank",
-        },
-      ],
+        }
+      ]
     };
-    this.projects = {
-      Featured: [
-        {
-          name: "Rebrand",
-          collab: "Convergence Design Lab",
-          image: require("../images/cdlmockup-thumb.jpg"),
-          link: "page",
-        },
-        {
-          name: "Passion to Purpose",
-          collab: "Convergence Design Lab",
-          image: require("../images/cdlmockup-thumb.jpg"),
-          link: "page",
-        },
-        {
-          name: "Equity Framework",
-          collab: "Chicago Public Schools",
-          image: require("../images/cdlmockup-thumb.jpg"),
-          link: "page",
-        },
-        {
-          name: "Da Bus",
-          collab: "The Bus Hawai'i",
-          image: require("../images/cdlmockup-thumb.jpg"),
-          link: "page",
-        },
-        {
-          name: "Nettiquette Game",
-          collab: "Augmented Reality",
-          image: require("../images/cdlmockup-thumb.jpg"),
-          link: "page",
-        },
-      ],
-    };
+
+    this.flatArray = {
+      title: "about",
+      text: "something",
+      category: "text",
+    }
   }
 }
 
