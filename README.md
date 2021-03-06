@@ -27,6 +27,10 @@ GSAP Animations:
 ```
 npm install gsap
 ```
+SEO Optimization
+```
+npm i react-helmet
+```
 To initialize Github Pages:
 ```
 npm install gh-pages --save-dev
