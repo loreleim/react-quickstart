@@ -295,3 +295,6 @@ export default firebase;
 ## Errors
 A branch named 'gh-pages' already exists
 https://stackoverflow.com/questions/63964575/fatal-a-branch-named-gh-pages-already-exists
+
+Public URL Pains
+https://stackoverflow.com/questions/27928372/react-router-urls-dont-work-when-refreshing-or-writing-manually
