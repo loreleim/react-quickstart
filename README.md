@@ -298,3 +298,30 @@ https://stackoverflow.com/questions/63964575/fatal-a-branch-named-gh-pages-alrea
 
 Public URL Pains
 https://stackoverflow.com/questions/27928372/react-router-urls-dont-work-when-refreshing-or-writing-manually
+
+Finding ways to remove the hash
+https://stackoverflow.com/questions/56981230/how-to-redirect-old-react-router-hashrouter-with-the-to-browserrouter
+
+```
+To be honest, none of these solutions worked for me really, I wanted to perform a redirect from all my previous routes to the new ones without #.
+
+While the accepted answer should be fine for most cases, I'm also handling 404s, which would not really be caught by such redirect.
+
+Ended up adding a guard interacting with React Router history before rendering my switch:
+
+function App() {
+  const history = useHistory()
+
+  if (location.hash.startsWith('#/')) {
+    history.push(location.hash.replace('#', '')) // or history.replace
+  }
+
+  return (
+    <Switch>
+      <Route path="/" exact component={ Home } />
+      ...
+      <Route path="*" component={ PageNotFound } />
+    </Switch>
+  )
+}
+```
