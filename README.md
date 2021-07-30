@@ -325,3 +325,6 @@ function App() {
   )
 }
 ```
+
+## Debugging
+[Node sass issues?](https://stackoverflow.com/questions/46515077/unable-to-install-node-sass-in-my-project)
