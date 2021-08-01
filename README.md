@@ -299,6 +299,20 @@ export default firebase;
 
 `The package-lock.json file was created with an old version of npm`
 
+`Node sass`
+Uninstall node-sass: `npm uninstall node-sass` 
+
+Delete package-lock.json, and clean the cache: `npm cache clean --force`
+
+then do `npm update` `npm install` `npm update` 
+
+then again try to install node sass: 
+`npm install node-sass`
+
+If this doesn't work, Try to rebuild node-sass:
+
+npm rebuild node-sass
+
 ## Errors
 A branch named 'gh-pages' already exists
 https://stackoverflow.com/questions/63964575/fatal-a-branch-named-gh-pages-already-exists
