@@ -297,6 +297,8 @@ export default firebase;
 ## Updating Errors
 `npm update react`
 
+`The package-lock.json file was created with an old version of npm`
+
 ## Errors
 A branch named 'gh-pages' already exists
 https://stackoverflow.com/questions/63964575/fatal-a-branch-named-gh-pages-already-exists
