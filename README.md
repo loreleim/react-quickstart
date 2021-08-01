@@ -292,6 +292,11 @@ export default firebase;
   };
 ```
 
+<hr>
+
+## Updating Errors
+`npm update react`
+
 ## Errors
 A branch named 'gh-pages' already exists
 https://stackoverflow.com/questions/63964575/fatal-a-branch-named-gh-pages-already-exists
