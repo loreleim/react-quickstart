@@ -349,3 +349,11 @@ function App() {
 
 ## Debugging
 [Node sass issues?](https://stackoverflow.com/questions/46515077/unable-to-install-node-sass-in-my-project)
+
+
+## Config Github Pages
+Deploy your app to github pages via a custom Google Domain name.
+
+[Official Github Docs](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-a-records-with-your-dns-provider)
+
+[Source](https://dev.to/trentyang/how-to-setup-google-domain-for-github-pages-1p58)
