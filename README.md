@@ -11,6 +11,11 @@ SCSS Management:
 ```
 npm install node-sass@4.14.1
 ```
+SCSS Management 2021: 
+```
+npm install --save-dev sass
+```
+[Source](https://medium.com/nerd-for-tech/add-sass-to-your-react-app-in-2021-here-is-how-c7260c323a5a)
 Page Routing:
 ```
 npm install react-router-dom
