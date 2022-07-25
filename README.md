@@ -355,6 +355,53 @@ function App() {
 ## Debugging
 [Node sass issues?](https://stackoverflow.com/questions/46515077/unable-to-install-node-sass-in-my-project)
 
+## Functional Component
+```
+
+import React from 'react';
+const HelloWorld = () => {
+   return (
+      <div>
+         <p>Hello World!</p>
+      </div>
+   )
+}
+export default HelloWorld;
+```
+
+## Class Component
+```
+import React from 'react';
+class HelloWorld extends React.Component {
+   render() {
+      return (
+         <div>
+            <p>Hello World!</p>
+         </div>
+      )
+   }
+}
+export default HelloWorld;
+```
+
+## High Order Component
+```
+import React from 'react';
+import MyComponent from './components/MyComponent';
+class HelloWorld extends React.Component {
+   render() {
+      return(
+         <div>
+            {this.props.myArray.map((element) => (
+               <MyComponent data={element} key={element.key} />
+            ))}
+         </div>
+      )
+   }
+}
+export default HelloWorld;
+```
+
 
 ## Config Github Pages
 Deploy your app to github pages via a custom Google Domain name.
