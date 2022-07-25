@@ -402,6 +402,23 @@ class HelloWorld extends React.Component {
 export default HelloWorld;
 ```
 
+## Listen for Dark Mode Preference
+
+useEffect(() => {
+  // Add listener to update styles
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => onSelectMode(e.matches ? 'dark' : 'light'));
+
+  // Setup dark/light mode for the first time
+  onSelectMode(window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+
+  // Remove listener
+  return () => {
+    window.matchMedia('(prefers-color-scheme: dark)').removeEventListener('change', () => {
+    });
+  }
+}, []);
+
+
 ## Best Way to Add Google Fonts
 [Source](https://blog.larsbehrenberg.com/the-best-way-to-load-and-use-google-fonts-with-react-gatsby-and-nextjs)
 
