@@ -415,7 +415,7 @@ useEffect(() => {
 
 
 ## Best Way to Add Google Fonts
-[Source](https://blog.larsbehrenberg.com/the-best-way-to-load-and-use-google-fonts-with-react-gatsby-and-nextjs)
+[Use this Google Webfont Helper](https://google-webfonts-helper.herokuapp.com/fonts)
 
 ## Config Github Pages
 Deploy your app to github pages via a custom Google Domain name.
