@@ -6,11 +6,6 @@
 npx/npm create-react-app my-app
 cd my-app
 ```
-SCSS Management:
-
-```
-npm install node-sass@4.14.1
-```
 SCSS Management 2021: 
 ```
 npm install --save-dev sass
