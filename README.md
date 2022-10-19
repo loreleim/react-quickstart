@@ -31,6 +31,10 @@ SEO Optimization
 ```
 npm i react-helmet
 ```
+Play Sound in Browser
+```
+npm install --save react-howler
+```
 To initialize Github Pages:
 ```
 npm install gh-pages --save-dev
