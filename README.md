@@ -403,19 +403,28 @@ export default HelloWorld;
 
 ## Listen for Dark Mode Preference
 
-useEffect(() => {
-  // Add listener to update styles
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => onSelectMode(e.matches ? 'dark' : 'light'));
+```
+import {createContext, useState} from "react";
 
-  // Setup dark/light mode for the first time
-  onSelectMode(window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+export const ThemeContext = createContext(null);
 
-  // Remove listener
-  return () => {
-    window.matchMedia('(prefers-color-scheme: dark)').removeEventListener('change', () => {
-    });
+function App() {
+  const [theme, setTheme] = useState("dark");
+  const toggleTheme = () => {
+    setTheme((currentTheme) => currentTheme === "dark" ? "light" : "dark");
   }
-}, []);
+
+  return (
+    <ThemeContext.Provider value={{theme, toggleTheme}}>
+      <div className="App">
+        <h1>Testing</h1>
+      </div>
+    </ThemeContext.Provider>
+  );
+}
+
+export default App;
+```
 
 
 ## Best Way to Add Google Fonts
